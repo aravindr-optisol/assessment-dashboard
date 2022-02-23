@@ -1,0 +1,139 @@
+
+.content{
+    width: 1200px;
+    margin-left: 20px;
+}
+
+.container{
+    width: 1100px;
+}
+
+.channel_card{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08), inset -1px 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.showActive{
+    border-right:3px solid blue !important;
+    width: 269px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+}
+.line{
+    width: 500px;
+    height: 1px;
+    margin: 13px 0 12px 10.5px;
+    background-color: #ddd;
+}
+
+.date{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.date span {
+    border: 1px solid #ddd;
+    border-radius: 13px; 
+    padding: 4px 10px 5px;
+    border: solid 1px #ccc;
+    background-color: #eee;
+}
+
+.req_border{
+  /* width: 249.8px; */
+  border-width: 200px 15px;
+  height: 49px;
+  padding: 12px;
+  border: solid 1px #ccd2de;
+  background-color: #ebf2ff;
+  border-radius: 0 10px 10px 10px;
+}
+
+.reply_border{
+    width: 450.8px;
+    height: 90px;
+    padding: 12px;
+    border: solid 1px #ccd2de;
+    background-color: #ebf2ff;
+    border-radius: 0 10px 10px 10px;
+}
+
+.channel_card h5{
+    font-size: 18px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.side_main{
+    margin-left: -200px;
+    margin-top: 20px;
+    width: 300px;
+    height: 135px;
+    border: solid 1px #ddd;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.top_card{
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+}
+
+.top_name{
+    margin-left: 20px;
+}
+
+.side_main button {
+    width: 170px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #fbaa29;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222;
+    margin-left: 20px;
+}
+
+.side_main_2{
+    margin-top: 40px;
+    width: 300px;
+    height: 315px;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.top_card_2{
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+.side_main_content{
+    text-align: left;
+    padding: 10px ;
+}
+
+.side_main_content h6{
+    color: #1488e1;
+}
+
+.side_main_3{
+    width: 300px;
+    height: 195px;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #ddd;
+    background-color: #fff;
+}
+
+.top_card_3{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+

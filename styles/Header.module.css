@@ -1,0 +1,59 @@
+.header {
+    height: 130px;
+    /* margin: 0 0 20px 80px; */
+    padding: 18px 23px 0 20px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 1480px;
+    margin-left: 20px;
+}
+
+.headerFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 0.2rem; */
+}
+
+.header button {
+    width: 170px;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #fbaa29;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222;
+}
+
+
+.nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+    list-style: none;
+    cursor:pointer;
+}
+
+.nav ul li:nth-child(2){
+    margin-left: 35px;
+}
+
+.nav{
+    text-align: left;
+    margin-top: 10px;
+    margin-left:-30px ;
+    /* padding-left: 1rem; */
+}
+
+.activeTab {
+    color: #1488e1 !important;
+    border-bottom: 2px solid #1488e1;
+    font-weight: bolder;
+}
