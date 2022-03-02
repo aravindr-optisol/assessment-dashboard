@@ -1,13 +1,22 @@
 import React from 'react';
 import styles from '../../styles/Channel.module.css'
-
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
 import * as BsIcons from "react-icons/bs";
 import * as FiIcons from "react-icons/fi";
 import Header from '../../components/header';
+import { Card } from '../../components/card';
+export const getStaticProps=async()=>{
+	const res=await fetch(`http://localhost:3000/api/userlist`).then(res=>res.json())
+	return{
+		props:{ userList:res}
+	}
+}
 
-const Channels = () => {
+
+
+
+const Channels = ({userList}) => {
 	
     let iconStyles = { color: "black", fontSize: "1rem" };
 	let greaterStyles = { color: '#1488e1', fontSize: "0.6rem" };
@@ -25,9 +34,11 @@ const Channels = () => {
 			path:'/buying-spaces/spaces'
 		}
 	]
+	console.log("userList",userList)
   return (
      <>
     <Header header="Buying Spaces" tabs={tabs} currentTab="Channels" />
+					
 	<div className='d-flex'>
     <main className={styles.content}>
     <div className={styles.container}>
@@ -42,6 +53,8 @@ const Channels = () => {
 							</div>
 						</div>
 					</div>
+
+					
 					<a className="list-group-item list-group-item-action border-0">
 						<div className="d-flex justify-content-between align-items-center">
 							<img src="https://bootdey.com/img/Content/avatar/avatar7.png" className="rounded-circle mr-1" alt="Doris Wilder" width="40" height="40" />&nbsp;
@@ -166,16 +179,19 @@ const Channels = () => {
 	</div>
     </main>
 	<div className={styles.side_main}>
-		<div className={styles.top_card}>
-		<div>
-			<img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40" />
-		</div>
-		<div className={styles.top_name}>
-			<h6>Tristan Wells</h6>
-			<span className='text-muted'>Kentico Kontent's Sales Agent</span>
-		</div>					
-		</div>
-		<button>Schedule Meeting</button>	
+	<Card content={()=>{return(
+				<div>
+				<div>
+					<img src="https://bootdey.com/img/Content/avatar/avatar3.png" className="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40" />
+				</div>
+				<div className={styles.top_name}>
+					<h6>Tristan Wells</h6>
+					<span className='text-muted'>Kentico Kontent's Sales Agent</span>
+				</div>					
+				<button>Schedule Meeting</button>
+				</div>
+	)}}/>
+	
 		
 	
 	<div className={styles.side_main_2}>
